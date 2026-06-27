@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration</title>
+<link rel="stylesheet" href="register.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+<div class="container">
+<div class="left">
+<h1>Create Your<br><span>Student Account</span></h1>
+<p>Complaint & Issue Tracking System<br>Marwadi University</p>
+<div class="features">
+<div>✔ Register Once</div>
+<div>✔ Raise Complaints Anytime</div>
+<div>✔ Track Complaint Status</div>
+</div>
+</div>
+
+<div class="right">
+<div class="card">
+<h2>Student Registration</h2>
+
+<form onsubmit="return validateForm()">
+<label>Full Name</label>
+<input type="text" id="name" placeholder="Enter Full Name">
+
+<label>Roll Number</label>
+<input type="text" id="roll" placeholder="Enter Roll Number">
+
+<label>Mobile Number</label>
+<input type="text" id="mobile" placeholder="Enter Mobile Number">
+
+<label>Email</label>
+<input type="email" id="email" placeholder="Enter Email">
+
+<label>Department</label>
+<select id="dept">
+<option value="">Select Department</option>
+<option>BCA</option>
+<option>B.Tech</option>
+<option>BBA</option>
+<option>MCA</option>
+<option>MBA</option>
+</select>
+
+<label>Semester</label>
+<select id="sem">
+<option value="">Select Semester</option>
+<option>Semester 1</option>
+<option>Semester 2</option>
+<option>Semester 3</option>
+<option>Semester 4</option>
+<option>Semester 5</option>
+<option>Semester 6</option>
+</select>
+
+<label>Password</label>
+<input type="password" id="pass" placeholder="Create Password">
+
+<label>Confirm Password</label>
+<input type="password" id="cpass" placeholder="Confirm Password">
+
+<div class="check">
+<input type="checkbox" id="terms"> I agree to Terms & Conditions
+</div>
+
+<button type="submit">Register</button>
+
+<p id="msg"></p>
+
+<div class="login-link">
+Already have an account?
+<a href="indix.html">Login</a>
+</div>
+
+</form>
+
+</div>
+</div>
+</div>
+<script src="register.js"></script>
+</body>
+</html>

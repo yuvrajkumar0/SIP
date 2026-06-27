@@ -1,0 +1,22 @@
+ *{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{display:flex;background:#eef3fb}
+.sidebar{width:240px;min-height:100vh;background:#0b5bd3;color:#fff;padding:20px}
+.sidebar h2{text-align:center;margin-bottom:25px}
+.sidebar a{display:block;color:#fff;text-decoration:none;padding:14px;border-radius:8px;margin:8px 0}
+.sidebar a:hover,.active{background:#0846a4}
+.main{flex:1;padding:25px}
+.topbar{display:flex;justify-content:space-between;align-items:center;background:#fff;padding:18px 25px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.1)}
+.banner{margin-top:20px;padding:35px;border-radius:15px;color:#fff;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),url("https://tse3.mm.bing.net/th/id/OIP.3GsvChzmqPQerJqoSG2HiQHaE8?pid=Api&P=0&h=180") center/cover}
+.banner button{margin-top:15px;padding:12px 20px;border:none;border-radius:8px;background:#ffd166;cursor:pointer;font-weight:bold}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:25px 0}
+.card{background:#fff;padding:25px;border-radius:12px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,.1)}
+.table-box{background:#fff;padding:20px;border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,.1)}
+table{width:100%;border-collapse:collapse;margin-top:15px}
+th,td{padding:12px;border-bottom:1px solid #ddd;text-align:left}
+@media(max-width:900px){
+body{flex-direction:column}
+.sidebar{width:100%;min-height:auto}
+.cards{grid-template-columns:1fr 1fr}
+}
+
+

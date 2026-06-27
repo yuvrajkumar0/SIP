@@ -1,0 +1,297 @@
+/* ==========================
+   Complaint Tracking System
+   Student Login CSS
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#eef3fb;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* LEFT SIDE */
+
+.left{
+    width:45%;
+    background-image:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("https://tse3.mm.bing.net/th/id/OIP.3GsvChzmqPQerJqoSG2HiQHaE8?pid=Api&P=0&h=180");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    color:#fff;
+    padding:70px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+
+    position:relative;
+    overflow:hidden;
+}
+
+.left h1{
+    font-size:52px;
+    line-height:1.2;
+    z-index:2;
+}
+
+.left span{
+    color:#ffd166;
+}
+
+.left p{
+    margin:25px 0;
+    font-size:18px;
+    line-height:30px;
+    z-index:2;
+}
+
+.features{
+    z-index:2;
+}
+
+.features div{
+
+    margin:15px 0;
+    padding:15px;
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(8px);
+
+    border-radius:12px;
+
+    border:1px solid rgba(255,255,255,.25);
+
+    transition:.3s;
+}
+
+.features div:hover{
+
+    background:rgba(255,255,255,.28);
+
+    transform:translateX(10px);
+
+    cursor:pointer;
+}
+
+/* RIGHT SIDE */
+
+.right{
+
+    width:55%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+/* LOGIN CARD */
+
+.card{
+
+    background:#fff;
+
+    width:420px;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.icon{
+
+    text-align:center;
+
+    font-size:45px;
+
+    color:#0b5bd3;
+
+    margin-bottom:10px;
+}
+
+h2{
+
+    text-align:center;
+
+    margin:10px 0;
+}
+
+.card p{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:20px;
+}
+
+label{
+
+    display:block;
+
+    margin:12px 0 6px;
+
+    font-weight:bold;
+}
+
+/* INPUT BOX */
+
+.input-box{
+
+    display:flex;
+
+    align-items:center;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    padding:12px;
+
+    transition:.3s;
+}
+
+.input-box:hover{
+
+    border-color:#0b5bd3;
+}
+
+.input-box input{
+
+    border:none;
+
+    outline:none;
+
+    flex:1;
+
+    padding:8px;
+
+    font-size:15px;
+}
+
+.input-box i{
+
+    color:#777;
+}
+
+.toggle{
+
+    cursor:pointer;
+}
+
+/* REMEMBER */
+
+.row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin:15px 0;
+
+    font-size:14px;
+}
+
+.row a{
+
+    text-decoration:none;
+
+    color:#0b5bd3;
+
+    font-weight:bold;
+}
+
+/* BUTTON */
+
+button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#0b5bd3;
+
+    color:#fff;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    background:#083f94;
+
+    transform:translateY(-2px);
+}
+
+#msg{
+
+    text-align:center;
+
+    margin-top:15px;
+
+    font-weight:bold;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.container{
+
+    flex-direction:column;
+}
+
+.left,
+.right{
+
+    width:100%;
+}
+
+.left{
+
+    padding:40px;
+
+    min-height:350px;
+}
+
+.left h1{
+
+    font-size:38px;
+}
+
+.card{
+
+    width:90%;
+
+    margin:30px 0;
+}
+
+}
